@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Aidify</title>
+    <link rel="icon" type="image/x-icon" href="images/FaviconA.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ef7a05f58b.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html"><img class="logo" src="./images/logo2.png" alt="Aidify Logo"></a>
+        <!-- <div class="logo">Aidify</div> -->
+        <div class="menu-icon" onclick="toggleMobileNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <b><a href="about.html">OUR STORY</a></b>
+            <a href="#contact">CONTACT US</a>
+            <a href="https://chromewebstore.google.com/detail/aidify/odaipdgfpakepciknhkgffehcioidecj?pli=1" target="_blank" rel="noopener noreferrer"><button class="contact-btn">Install Now</button></a>
+        </nav>
+    </div>
+
+    <!-- About Us Section -->
+
+    <section id="intro-team" class="intro-section">
+        <div class="intro-content">
+            <div class="intro-info">
+                <h1>Because student effort matters</h1>
+                <p>Assessing student effort is difficult, especially in a world with AI...until now.</p>
+            </div>
+            <!-- <div class="intro-image">
+                <img src="images/storyTeam.png" alt="Image of us">
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="our-story">
+        <h1>Our Story</h1>
+        <h2>How it all started...</h2>
+        <p>
+            Our friend was falsely accused of using AI to do his work.
+            He was forced to redo his assignment or get a zero. This was his reaction:
+        </p>
+        <img src="./images/falseAccusation.JPG" alt="Reaction image">
+        <p>
+            He had no way to prove his innocence. We saw how this negatively impacted his mental health and reputation.
+            We wanted a way to protect students against false accusations but also give teachers confidence that
+            students are not using AI to complete their assignments.
+            The idea for Aidify was born.
+        </p>
+        <h2>Creation of Aidify...</h2>
+        <p>
+            In the summer of 2023, we developed our idea further through the DMZ Basecamp program. Through the help and
+            encouragement of our mentors, we were one of the winners of the DMZ pitch competition.</p>
+        <p>
+            We built Aidify from scratch on our own. We wanted something simple that did not require any student
+            software installation. After many iterations, we created Aidify as a Chrome extension to measure student
+            effort by analyzing the work that goes into a Google Document.
+        </p>
+        <h2>Our mission...</h2>
+        <p>
+            We want to share Aidify with as many students and teachers as possible. We truly believe this tool is
+            necessary
+            in a world where AI is becoming increasingly relevant.
+            Aidify allows students to defend their work and gives teachers assurance that AI is being used responsibly.
+        </p>
+    </section>
+
+    <section id="contact" class="contact-form">
+        <div>
+            <h1>Contact Us</h1>
+            <p>info@aidify.ca<br>
+            </p>
+            <form id="contact-form">
+                <!-- Name -->
+                <label for="user_name">Name</label>
+                <input type="text" id="user_name" name="user_name" placeholder="Your Name..." required />
+                <!-- Email -->
+                <label for="user_email">Email</label>
+                <input type="email" id="user_email" name="user_email" placeholder="example@gmail.com" required />
+                <!-- Message -->
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Your message..." required></textarea>
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">
+                    Send
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by Melyne, Jonathan, David, Nico, and Jerry</p>
+    </footer>
+
+    <!-- For the navbar hamburger on mobile view -->
+    <script>
+        function toggleMobileNav() {
+            const nav = document.querySelector('.navbar nav');
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
