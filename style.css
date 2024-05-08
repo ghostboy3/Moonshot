@@ -345,6 +345,8 @@ html {
   padding: 1rem 0 1rem 2rem;
   margin: 0;
   /* background-color: #e6ffec; */
+  /* background-color: #e6ffec; */
+
 }
 
 #contact-form {
@@ -420,6 +422,13 @@ footer a {
   color: black;
 }
 
+#team{
+  text-align: center;
+}
+.team-member img{
+  width: 175px;
+  border-radius: 50%;
+}
 /* Responsive Media Queries */
 
 @media screen and (max-width: 768px) {
@@ -609,6 +618,9 @@ footer a {
     height: auto;
   }
 
+  #team {
+    text-align: center;
+  }
   .team-section {
     padding: 4rem 3rem 3rem 3rem;
   }
