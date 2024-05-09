@@ -1,3 +1,8 @@
+:root {
+  /* Backgrounds */
+  --light-background: #b9e5c823;
+  /* Text colors */
+}
 body,
 html {
   margin: 0;
@@ -95,16 +100,24 @@ html {
 /* Hero Section */
 
 .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),url('images/algaeBg.webp');
+  background-size: cover;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 80px 100px 80px 110px;
-  background-color: #e6ffec;
+  /* justify-content: space-between; */
+  /* padding: 90px 100px 90px 110px; */
+  padding-top: 150px;
+  padding-bottom: 150px;
+  /* background-color: var(--light-background); */
+  text-align: center;
+  justify-content: center;
+  color: white;
 }
 
 .hero-text {
   /* margin-right: 5rem; */
-  max-width: 44%;
+  max-width: 75%;
 }
 
 .hero-text h1 {
@@ -150,8 +163,11 @@ html {
 }
 
 /* Purpose section */
+.heading{
+  font-size: 30px;
+}
 .values-section {
-  background-color: #e6ffec;
+  background-color: var(--light-background);
   /* background-color: #ffffff; */
   /* White background */
   padding: 90px 100px 80px 110px;
@@ -283,7 +299,7 @@ html {
 /* Our Story Section */
 .intro-section {
   padding: 3rem 110px 3rem 130px;
-  background-color: #e6ffec;
+  background-color: var(--light-background);
 }
 
 .intro-content {
@@ -424,6 +440,7 @@ footer a {
 
 #team{
   text-align: center;
+  padding: 50px 110px 50px 110px;
 }
 .team-member img{
   width: 175px;
