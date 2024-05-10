@@ -162,6 +162,7 @@ html {
   border-radius: 8px;
 }
 
+
 /* Purpose section */
 .heading{
   font-size: 30px;
@@ -177,7 +178,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 1200px;
+  max-width: 1700px;
 }
 
 .values-text {
@@ -198,7 +199,8 @@ html {
 }
 
 .values-text p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
   font-size: 1.2rem;
   line-height: 1.6;
   font-weight: 300;
@@ -230,6 +232,28 @@ html {
   /* Dark text for paragraphs */
 }
 
+/* impact section */
+#impactBg{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.432)),url('images/farm.jpg');
+  background-size: cover;
+
+}
+#impact{
+  text-align: center;
+  font-size: 30px;
+  width: 75%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: none;
+  color: white;
+
+}
+#impact p{
+  text-align: center;
+  color: white;
+}
+
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -237,6 +261,9 @@ html {
   font-weight: 400;
 }
 
+#team{
+  background-color: var(--light-background);
+}
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
